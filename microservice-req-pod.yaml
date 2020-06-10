@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: microservice-reg
+spec:
+  containers:
+  - name: microservice-reg-container
+    image: prabu07/currency-converter
+  imagePullSecrets:
+  - name: regcred
